@@ -1,0 +1,291 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Mustafa}{Sheikh}{ \urlstyle{same}\url{www.linkedin.com/in/mustafajsheikh} \\
+\href{mailto:mustafa.sheikhj@gmail.com}{mustafa.sheikhj@gmail.com} | 313.782.1205
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SUMMARY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Summary}
+
+%\location{
+Software Tools Developer and \\ Electrical Engineer
+with six years \par of professional experience working \par in an agile corporate environment. \\
+\\
+Skilled at gathering requirements to \par deliver hardware and
+software \par solutions for complex problems while \\
+collaborating with global teams.\\
+%}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     OBHECTIVE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Objective}
+
+%\location{
+%Looking for opportunities in \\ Embedded Software field.
+
+%}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+%\location{Adept:}
+Shell \textbullet{} Python \textbullet{} MATLAB \\
+%\location{Familiar:}
+C \textbullet{} C++ \textbullet{} Git \textbullet{} SVN\\
+%\location{Familiar:}
+%AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+\subsection{Engineering}
+%\location{Over 5000 lines:}
+Simulink \textbullet{}   Project Management \\
+Testing \textbullet{} Fixture Design \\ 
+%\location{Over 1000 lines:}
+dSPACE Tools \textbullet{} Smart Motor Control \\
+LabView
+%\location{Familiar:}
+%AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{University of Windsor}
+\descript{BSc in Physics}
+\location{Oct 2011 | Windsor, ON }
+\location{ Cum. GPA: 85\% \\
+Major GPA: 88\%}
+\sectionsep
+
+\subsection{University of Windsor}
+\descript{BSc in Electrical Engineering }
+\location{Oct 2009 |Windsor, ON \\ Cum. GPA: 84\%}
+Conc. in Communications with Co-op \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Links} 
+%Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
+%LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}} \\
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Physics}
+Quantum Mechanics \\
+Statistical Mechanics \\
+Classical Mechanics \\
+Electromagnetism \\
+Fourier Analysis \\
+Complex Analysis \\
+%Compilers + Practicum \\
+%Cloud Computing \\
+\sectionsep
+
+\subsection{Engineering}
+Coding and Information Theory \\
+%Image and Video Processing\\
+Digital Signal Processing \\
+Multimedia Systems \\
+Control Systems Engineering \\
+Wireless Communication \\
+%Functional Programming \\
+%Computer Graphics + Practicum \\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
+%Unix Tools and Scripting \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{Molex Connected Mobility}
+\descript{| Software Development Engineer}
+\location{January 2019 – Present | Rochester Hills, MI}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Developed and delivered Python based multi-threaded solution to flash software on multiple Automotive Ethernet Gateway module subsystem in vehicle using a web-interface for OEM and subsidiary which is currently being used production and testing purposes. 
+	\begin{tightemize}
+	\vspace{\topsep} % Hacky fix for awkward extra vertical space
+	\item The solution optimized and automated a very tedious manual process which was error prone took decreased time to flash from ~ 60 min per vehicle to ~20 min.
+	\item Initial solution was continually improved and is planned to be sold to OEM as part of new Firmware releases.
+	\vspace{\topsep} % Hacky fix for awkward extra vertical space
+	\end{tightemize}
+\item Worked on-site on Autonomous Vehicles to support OEM engineers and Ethernet Gateway firmware engineers to support testing and debugging. 
+\item Investigated and advised on best practices for LabView and it's use for in-house production testing solutions.
+\item Lead production testing efforts to review PFMEA as part of a cross-functional team.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ford Motor Company}
+\descript{| Lead Feature Expert }
+\location{July 2018 – Decmber 2018| Allen Park, MI}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Responsible for testing of Cross Traffic Alert Feature for new vehicles.
+\item Defined HW boundary and scope of testing while leading off-shore resources to ensure proper testing was completed within scope.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ford Motor Company}
+\descript{| Automation Solutions Developer }
+\location{January 2015 – June 2018 | Dearborn, MI}
+\begin{tightemize}
+\item Created tool to facilitate manual testing for HIL racks used by +40 people in Python using dSPACE API: increasing efficiency and user productivity.
+\item Researched and proto-typed Appium based Phone Automation solution in Python which was later developed as a full fledged solution by junior engineer who I mentored.
+\item Adapted, integrated, extended, and maintained Squish based Sync touchscreen automation tool created in Python. Enabled our lab to perform automated testing for features with Sync screen.
+\item Worked with internal customers and external suppliers to develop and deliver automated locking solution which required Python and part design expertise.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ford Motor Company}
+\descript{| HIL Engineer}
+\location{June 2012 – December 2014 | Dearborn, MI}
+\begin{tightemize}
+\item Successfully restructured and deployed dSPACE license scheme to maximize usage and minimize cost by bundling license dongles by user function.
+\item Managed and acquired licenses for the group of +40 people with an operating budget of ~125k USD per annum and total value of ~1 million USD.
+%\item Lead for global communication group which consisted of with teams from Germany, India, China, Mexico, and Australia
+\item Successfully performed parts acquisition and BOM validation for 100s of parts for 3 HIL racks for two separate programs simultaneously. 
+\item Worked with suppliers, engineers, and Ford purchasers to resolve issues and negotiate timelines and deliverables.
+\item Lead for Powertrain HIL Subsystem which required coordinating changes and expanding capability using MATLAB and Simulink for modelling or reading schematics to make hardware changes.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Awards} 
+%\begin{tabular}{rll}
+%2014	     & top 52/2500  & KPCB Engineering Fellow\\
+%2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+%2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+%2013	     & National  & Jump Trading Challenge Finalist\\
+%2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+%2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+%2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+%2010     & National & Comp. Soc. of India's National Programming Contest\\
+%\end{tabular}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Societies} 
+
+%\begin{tabular}{rll}
+%2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
+%2014   & National   & The Global Leadership and Education Forum (tGELF)\\
+%2012   &  National  & Golden Key International Honor Society\\
+%2012   &  National   & National Society of Collegiate Scholars\\
+%\end{tabular}
+%\sectionsep
+
+\end{minipage} 
+\end{document}  
+\documentclass[]{article}
