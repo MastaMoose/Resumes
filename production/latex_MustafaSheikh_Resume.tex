@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+
+\usepackage{amssymb}
+\usepackage{XCharter}               % set font
+\usepackage[T1]{fontenc}            % output encoding
+\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}                   % disable page numbering
+
+% ensure PDF output will be all-Unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule\vspace{-6.5pt}]
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt}
+
+% resume starts here
+\begin{document}
+
+% name
+\centerline{\Huge Mustafa Sheikh}
+
+\vspace{5pt}
+
+% contact information
+\centerline{\href{}{Canadian Citizen} | \href{mailto:mustafa.sheikhj@gmail.com}{mustafa.sheikhj@gmail.com} | \href{wwww.linkedin.com/in/mustafajsheikh}{www.linkedin.com/in/mustafajsheikh} | \href{}{313-782-1205}}
+
+\vspace{-10pt}
+
+% skills section
+\section*{Skills}
+\textbf{Languages:} Python, C/C++, MATLAB/Simulink, SolidWorks, Julia, UML, LabView \\
+\textbf{Tools:} dSPACE Tools, Vector CANoe, SAFe, Git, SVN, Jira, 8D, 5 whys, CAN/LIN, DFSS \\
+
+\vspace{-6.5pt}
+
+% experience section
+\section*{Experience}
+\textbf{Senior Virtual Application Engineer,} \href{}{General Motors} -- Milford, MI\hfill Nov 2022 -- Sept 2024\\
+\vspace{-9pt}
+\begin{itemize}
+  %\item Utilized hardware virtualization to accelerate delivery of software for Software-Defined Vehicle platform.
+  \item Championed and secured organizational buy-in for \$2 million Synopsys Virtualizer based 'shift-left' approach to Connectivity Module development enabling exploratory early designs.
+  \item Led cross-functional development and delivery of Synopsys Virtualizer based Occupant Safety Module with test software, accelerating integration testing efforts by 4 months ahead of official software availability.
+  \item Successfully launched next-generation ASTC Vlab based Central Gateway Module 8 months ahead of hardware schedule, driving concept-to-release progress and facilitating early software testing and integration.
+  \item Leveraged expertise in virtual workflows to collaborate with product owners and release train engineers to integrate virtual hardware team into enterprise level agile framework.
+  \item Scrum Lead for team of 12 as part SAFe for CAN and Ethernet ECUs for GM’s SDV Platform.
+  \item Developed virtualization solution benchmarks serving as the basis for tool-chain decisions worth \$100k+.
+  \item Utilized Vehicle Spy, CANoe, and WireShark to perform Root-Cause Analysis on ECUs.
+\end{itemize}
+
+\textbf{Senior Design and Release Engineer,} \href{}{General Motors} -- Warren, MI \hfill Mar 2021 -- Nov 2022 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Spearheaded sourcing of Telematics Module by leading a cross-functional team through RFIs and TDRs.
+  \item Leveraged agile principles to preempt and resolve issues while keeping leadership apprised.
+  \item Helped safeguard \$10s of millions in revenue and critical safety features for hundreds of thousands of OnStar customers impacted by the 2G/3G sunset by developing a mitigation plan with senior leaders.
+  \item Worked with Resident Engineers and SMEs to issue ECRs and resolve production PRTS/AIMS issues.
+  \item Maintained SW and HW BOMS in addition to SW Calibrations while supporting PPAP for new Part Assemblies.
+  \item Maintained Device Transmittals and Schematic for Telematics Modules.
+  \item Worked with Certification teams to ensure correct procedures were followed.
+\end{itemize}
+
+\textbf{Telematics System Integration Lead,} \href{}{Aerotek (Contract at GM)} -- Warren, MI \hfill Sept 2020 -- Mar 2021 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Led multidisciplinary development meetings for features representing \$10s of millions in business value.
+  \item Proactively tackled development and implementation challenges in test setups and provided direction for creating electrical testing harnesses while mentoring junior engineers.
+  \item Engaged system architects, subject experts, and suppliers to work on OTA related change requests for existing telematics modules to spearhead GM’s evolving OTA strategy.
+\end{itemize}
+
+\textbf{Software Controls Engineer,} \href{}{FAW US Research and Development} -- Plymouth, MI \hfill Feb 2020 -- Aug 2020 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Researched Vehicle Dynamics models and methods of Lateral Control for vehicles under typical highway scenarios in MATLAB/Simulink for ADAS and autonomy.
+  \item Independently developed and executed test plans for PID based longitudinal and LQR based lateral control algorithms using MATLAB, allowing team to catch and resolve issues before integration.
+  \item Worked closely with integration team to integrate and debug Software Releases in CarMaker SIL environment.
+  \item Developed Object Oriented MATLAB scripts to analyze an visualize CAN data from MobilEye EyeQ4 system.
+\end{itemize}
+
+%\hfill \break
+%\hfill \break
+
+\textbf{End-of-Line Test Development Engineer,} \href{}{Molex LLC} -- Rochester Hills, MI \hfill Nov 2018 -- Feb 2020 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Developed multi-threaded Python scripts to flash Firmware on in-vehicle Ethernet Gateway subsystem automating a 60 minute error-prone manual process down to 15 minutes with logs.
+  \item Designed and documented manufacturing test solutions using UML methods and engaged in peer-review to verify functionality ensuring first-time quality of solutions in Python and LabView.
+  \item Led identification and mitigation of risks in production lines during PFMEA discussions with a global cross-functional team for Ethernet Switch Module subsystems and high-speed cables.
+  \item Partnered with senior leaders to address production rework issues, creating timely work instructions that improved reliability and reduced testing time for multiple OEM programs.
+  \item Led Root Cause Analysis and supported 8D and 5 why presentations for launch issues.
+\end{itemize}
+
+\textbf{Senior HIL Automation Engineer,} \href{}{Ford Motor Company} -- Dearborn, MI \hfill Apr 2013 -- Nov 2018 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Drove the integration and extension of Ford Sync automation tool created in Python enabling automated Infotainment testing at scale saving 100s of human hours.
+  \item Initiated, designed, and delivered dSPACE license restructuring efforts that freed up \$80k worth of wasted software licenses while also allowing team to scale up from 10 to 40 engineers.
+  \item Boosted testing efficiency with a Python-based automated Electronic Latch feature testing fixture, enabling continuous 24/7 remote testing and accelerating product development.
+\end{itemize}
+
+\textbf{HIL Engineer,} \href{}{EASi (Contract at Ford)} -- Dearborn, MI \hfill June 2012 -- Apr 2013 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Led HIL Testing activities for HIL subsystems by integrating and extending AutomationDesk solutions.
+  \item Improved Robotic HMI tester by increasing maintainability and setup time by 50\%.
+  \item Slashed HIL part costs by 75\% through BOM management of 3 vehicle platforms, involving 100s of components.
+\end{itemize}
+
+\textbf{Intern,} \href{}{Fraunhofer USA} -- Plymouth, MI \hfill Oct 2011 -- Mar 2012 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Validated and aligned high-power Diode Laser systems.
+  \item Supported run-off production assisting engineers in assembly and fixture design.
+\end{itemize}
+
+\textbf{Summer Intern,} \href{}{Institute for Imaging Research} -- Windsor, ON \hfill Jun 2011 -- Oct 2011 \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Utilized MATLAB to analyze for performing root-cause analysis and modeling of Ultrasonic sensor noise.
+  \item Presented data and conclusions to leadership of the institute at end-of-term.
+\end{itemize}
+
+% \textbf{Job Title,} \href{https://www.fstl1992.com/}{Company} -- City, ST \hfill XXXX -- XXXX \\
+% \vspace{-9pt}
+
+\vspace{-18.5pt}
+
+% education section
+\section*{Education}
+\textbf{\href{https://www.uwindsor.ca/}{University of Windsor}} -- BSc in Physics \hfill Oct 2011 \\
+\textbf{\href{https://www.uwindsor.ca/}{University of Windsor}} -- BASc in Electrical Engineering \hfill Oct 2009
+
+\end{document}
